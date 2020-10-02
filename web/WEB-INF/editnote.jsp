@@ -13,9 +13,16 @@
     </head>
     <body>
         <h1>Simple Note Keeper</h1><br>
-        <h2>View Note</h2>
-        <p>Titles: </p><br>
-        <p>Contents: </p><br>
+        <h2>Edit Note</h2>
+        
+        <form method ="post" action="note">
+            <label for="title">Title:</label>
+            <input id="title" type="text" name="title" value="" placeholder="This is the title:">
+            <br>
+            <label for="text">Contents:</label>
+            <textarea id="text" rows="8" cols="20" name="content"  value="" placeholder="contents goes here:"></textarea><br>
+            <input type="submit" value="save">
+        </form>
         
     </body>
 </html>
